@@ -8,3 +8,6 @@ Git is free software.
 
 third change
 999999999999
+
+
+Git has a mutable index called stage
