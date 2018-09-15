@@ -1,0 +1,31 @@
+git bash下
+# 创建公钥，记录文件保存地址
+ssh-keygen -t rsa -C "422398134@qq.com"
+# 公钥地址
+Enter file in which to save the key (/c/Users/Administrator/.ssh/id_rsa):
+# 测试连接
+ssh git@github.com
+
+#查看用户名和邮箱地址：
+
+$ git config user.name
+
+$ git config user.email
+
+#修改用户名和邮箱地址：
+
+$ git config --global user.name "username"
+
+$ git config --global user.email "email"
+
+要关联一个远程库，使用命令git remote add origin git@server-name:path/repo-name.git；
+
+关联后，使用命令git push -u origin master第一次推送master分支的所有内容；
+
+此后，每次本地提交后，只要有必要，就可以使用命令git push origin master推送最新修改；
+
+$ git clone git@github.com:GetFisher/biggernet.git
+
+
+
+
