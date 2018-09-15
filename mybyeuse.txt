@@ -1,0 +1,22 @@
+git bash下
+# 创建公钥，记录文件保存地址
+ssh-keygen -t rsa -C "422398134@qq.com"
+# 公钥地址
+Enter file in which to save the key (/c/Users/Administrator/.ssh/id_rsa):
+# 测试连接
+ssh git@github.com
+
+#查看用户名和邮箱地址：
+
+$ git config user.name
+
+$ git config user.email
+
+#修改用户名和邮箱地址：
+
+$ git config --global user.name "username"
+
+$ git config --global user.email "email"
+
+
+
