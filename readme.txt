@@ -8,7 +8,7 @@ Git is free software.
 
 third change
 999999999999
-
+Creating a new branch is quick
 
 Git has a mutable index called stage
 
