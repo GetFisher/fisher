@@ -1,0 +1,12 @@
+个人博客：
+一、功能：
+    博文首页：
+	板块：①首页、②相册、③小站商店
+
+STATIC_ROOT = os.path.join(BASE_DIR,  'static').replace('\\','/')
+
+
+STATICFILES_DIRS  =(
+    ("css", os.path.join(STATIC_ROOT,'css').replace('\\','/')),
+    ("js", os.path.join(STATIC_ROOT,'js').replace('\\','/')),
+)
