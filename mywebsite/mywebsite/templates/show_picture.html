@@ -1,0 +1,90 @@
+{% load static %}
+<!doctype html>
+<html>
+ <head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+	<link rel="stylesheet" href="{% static 'css/index.css' %}">
+     <script src="{% static 'js/jquery-1.11.3.js' %}"></script>
+     <script src="{% static 'js/index.js' %}"></script>
+ </head>
+ <body>
+  <div class="container">
+		<!-- 1、网页头部 -->
+		<div id="top">
+			<!-- 1.1 右：列表 -->
+			<ul id="list">
+
+				<li>
+					<a href="#"></a>
+
+					<a href="/logout/"></a>
+				</li>
+				<li>
+					<b></b>
+					<a href="#"></a>
+				</li>
+				<li>
+					<b></b>
+
+				</li>
+
+			</ul>
+			<!-- 1.2 左：三个超链接 -->
+			<!-- 1.2.1 上海 -->
+			<a href="#" class="address">
+				<a href="/">我的首页</a>
+			</a>
+			<!-- 1.2.2 满百包邮 -->
+{#			<a>满百包邮(环郊内)</a>#}
+{#			<!-- 1.2.3 星夜达 -->#}
+{#			<a href="#" class="xing">星夜达</a>#}
+		</div>
+		<!-- 2、LOGO 和 热门搜索 -->
+		<!-- 3、BANNER广告(横幅广告) -->
+		<div id="banner">
+			<img src="{% static 'images/art.jpg' %}">
+		</div>
+		<!-- 5、网页主体内容(各种产品) -->
+		<div id="main">
+            {% block picture2 %}
+			<!-- 5.1 礼品卡券 -->
+			<div class="item">
+				<!-- 5.1.2 下方 ：内容 -->
+				<ul>
+                    {% for i in all %}
+                        <li>
+						<!-- 上 ：图像 -->
+						<p>
+							<img src="{{ i.img }}">
+						</p>
+						<!-- 下 ：文本 -->
+						<div class="content">
+							<!-- 右：购物车图标 -->
+							<a href="#" class="cart">
+
+							</a>
+							<!-- 左上：商品名称 -->
+							<p>
+								{{ i.title }}
+							</p>
+							<!-- 左下：价格 + 规格 -->
+							<span>
+
+							</span>
+						</div>
+					</li>
+                    {% endfor %}
+				</ul>
+			</div>
+
+			<!-- 5.2 家庭量贩 -->
+			<!-- 5.3 全球鲜果 -->
+			<!-- 5.4 生鲜美食 -->
+		</div>
+    {% endblock %}
+		<!-- 5、网页主体内容结束-->
+		<!-- 6、网页底部 -->
+	</div>
+ </body>
+</html>
