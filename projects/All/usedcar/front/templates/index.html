@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <style>
+            body{
+                font: lem Arial, Helvetica,sans-serif;
+                color:#666;
+                margin: 0;
+                padding: 0;
+            }
+            p,
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6,
+            div{
+                padding: 0;
+                margin: 0;
+            }
+            ul{
+                padding: 0;
+                margin: 0;
+            }
+            li{
+                list-style: none;
+            }
+            a{
+                text-decoration: none;
+                out-line:none;
+                color: #666;
+            }
+            input{
+                outline: none;
+            }
+            i,
+            sub,
+            sup,
+            cite,
+            em,
+            small,
+            strong{
+                text-decoration: none;
+                font-style: none;
+                font-weight: normal;
+            }
+            img{
+                vertical-align: middle;
+            }
+            .clear:after{
+                content: "";
+                display: block;
+                clear: both;
+            }
+            .center{
+                width: 70%;
+                margin: 0 auto;
+            }
+            .left{
+                float: left;
+            }
+            .right{
+                float: right;
+            }
+            .btn{
+                width: 4em;
+                height: 1.7em;
+                border-radius: 15px;
+                border: 0.1em solid #8898SE;
+                margin-top: 1em;
+                margin-right: 1em;
+                outline: none;
+            }
+            .none{
+                display: none;
+            }
+            .block{
+                display: none;
+            }
+            #header{
+                box-sizing: border-box;
+                height: 80px;
+                background: linear-gradient(to bottom,#f5f4f5,#e6e6e5);
+                position: relative;
+            }
+            #header img{
+                height: 80px;
+                display: inline-block;
+            }
+            #header ul{
+                display: inline-block;
+                margin: 0 auto;
+            }
+            #header ul li{
+                display: inline-block;
+                line-height: 80px;
+                padding-left: 80px;
+                font-weight: bold;
+            }
+            #header p{
+                display: inline-block;
+                float: right;
+                line-height: 80px;
+                color: #3F51B8;
+                font-size: 23px;
+            }
+
+            .fa{
+                height: 500px;
+                padding-top: 30px;
+                position: relative;
+            }
+            .fa div{
+                border: 1px solid gray;
+            }
+            .fa .fa-1{
+                width: 200px;
+                height: 400px;
+                position: absolute;
+                left: 60px;
+            }
+            .fa .fa-2{
+                width: 200px;
+                height: 400px;
+                position: absolute;
+                left: 300px;
+            }
+            .fa .fa-3{
+                width: 400px;
+                height: 180px;
+                position: absolute;
+                left: 540px;
+            }
+            .fa .fa-4{
+                width: 400px;
+                height: 180px;
+                position: absolute;
+                left: 540px;
+                top: 248px;
+            }
+            .fa .fa-5{
+                width: 200px;
+                height: 400px;
+                position: absolute;
+                left: 980px;
+            }
+        </style>
+    </head>
+    <body>
+    {{ request.user.username}}
+        <div id="header">
+            <a href="">
+                <img >
+            </a>
+            <ul>
+                <li><a href="">卖车</a></li>
+                <li><a href="">买车</a></li>
+                <li><a href="">服务保障</a></li>
+                <li><a href="">个人中心</a></li>
+            </ul>
+            <p>
+                <a href="">登录</a>
+                <b>
+                    400-400-400
+                </b>
+            </p>
+        </div>
+        <div class="fa container">
+            <div class="fa-1">a</div>
+            <div class="fa-2">b</div>
+            <div class="fa-3">c</div>
+            <div class="fa-4">d</div>
+            <div class="fa-5">e</div>
+
+        </div>
+
+    </body>
+</html>
